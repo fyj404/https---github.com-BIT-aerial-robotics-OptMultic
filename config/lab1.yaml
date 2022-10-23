@@ -1,0 +1,39 @@
+%YAML:1.0
+
+#common parameters
+#support: 1 imu 1 cam; 1 imu 2 cam: 2 cam; 
+
+uav_number: 3
+lab_number: 1
+gt: 
+   name: gt
+uav_1:
+   name: c1
+   body_T_cam: !!opencv-matrix
+      rows: 4
+      cols: 4
+      dt: d
+      data: [0,0,1,-0.5,
+            1,0,0,-0.35,
+            0,1,0,-0.2,
+            0,0,0,1]
+uav_2:
+   name: c3
+   body_T_cam: !!opencv-matrix
+      rows: 4
+      cols: 4
+      dt: d
+      data: [-0.5,0,-0.8660244,-0.5,
+        -0.8660244,0,0.5,-0.35,
+        0,1,0,-0.2,
+        0,0,0,1]
+uav_3:
+   name: c5
+   body_T_cam: !!opencv-matrix
+      rows: 4
+      cols: 4
+      dt: d
+      data: [-0.5,0,-0.8660244,-0.5,
+            -0.8660244,0,0.5,-0.35,
+            0,1,0,-0.2,
+            0,0,0,1]
